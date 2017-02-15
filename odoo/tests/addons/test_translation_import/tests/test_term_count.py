@@ -7,7 +7,7 @@ class TestTermCount(common.TransactionCase):
 
     def test_count_term(self):
         """
-        Just make sure we have as many translation entries as we wanted.
+        Should make sure we have as many translation entries as we wanted.
         """
         odoo.tools.trans_load(self.cr, 'test_translation_import/i18n/fr.po', 'fr_FR', verbose=False)
         ids = self.env['ir.translation'].search(
